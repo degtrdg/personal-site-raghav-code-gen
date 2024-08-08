@@ -20,4 +20,6 @@ export default function Home() {
   );
 }
 
-import "./script";
+if (process.env.NODE_ENV === "development") {
+  import("./script");
+}
