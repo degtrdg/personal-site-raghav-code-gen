@@ -135,7 +135,6 @@ function updateToggleState() {
   toggle.setAttribute("data-enabled", selectionModeEnabled);
 }
 
-// Modify the mouseover event listener
 document.addEventListener("mouseover", async (event) => {
   if (!selectionModeEnabled) return;
   const element = event.target;
@@ -159,7 +158,6 @@ document.addEventListener("mouseout", (event) => {
   removeBoundingBox();
 });
 
-// Modify the click event listener
 document.addEventListener("click", async (event) => {
   if (!selectionModeEnabled) return;
   const element = event.target;
@@ -179,5 +177,4 @@ document.addEventListener("click", async (event) => {
   }
 });
 
-// Call this function to create the toggle button
 createToggleButton();
